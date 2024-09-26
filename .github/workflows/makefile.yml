@@ -25,5 +25,5 @@ jobs:
     
     - uses: actions/upload-artifact@v4
       with: 
-        name: motostandup-STL.tar
+        name: motostandup-STL
         path: out/*
