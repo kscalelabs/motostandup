@@ -16,7 +16,7 @@ base = 110
 
 
 def RS01_cutout(thick=10):
-    return RadialHoles(dia=73, count=9, hole=3.5, thick, angle=0) + RadialHoles(0, 1, 44, thick, 0)
+    return RadialHoles(dia=73, count=9, hole=3.5, thick=thick, angle=0) + RadialHoles(0, 1, 44, thick, 0)
 
 
 
