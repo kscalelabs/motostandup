@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: install openscad
-      run: apt-get install openscad
+      run: sudo apt-get install openscad
 
     - name: install solidpython
       run: pip install solidpython2
