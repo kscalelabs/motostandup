@@ -45,7 +45,7 @@ def stand(cutout=RS01_cutout, head_dia=100):
 
 
 rval = stand(RS01_cutout).fwd(115)
-# rval += stand(RS04_cutout, 135)
+rval += stand(RS04_cutout, 135)
 
 rval = rval.rotate(90).right(10)
 # rval = RadialHoles()
