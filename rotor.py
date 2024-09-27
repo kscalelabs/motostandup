@@ -5,9 +5,9 @@ from collections import namedtuple
 from common import RadialHoles
 
 rim_dia = 255
-rim_h = 3
+rim_h = 2
 ring_dia = 250
-ring_h = 10
+ring_h = 8
 
 def ring(rval, ring_dia=250, ring_h=10, rim_extra=5, rim_h=3): 
     rim_dia = ring_dia+rim_extra
@@ -77,7 +77,7 @@ def ring(rval, ring_dia=250, ring_h=10, rim_extra=5, rim_h=3):
 def rotor_robstride01():
         
     stem_dia = 40
-    stem_h = 50
+    stem_h = 30
 
     rval = cylinder(d=stem_dia, h=stem_h)
 
@@ -86,7 +86,7 @@ def rotor_robstride01():
     rval -= RadialHoles(
         dia=24,
         count=6, 
-        hole=4.3,
+        hole=4.6,
         thick=200,
         angle=0
     )
@@ -94,7 +94,7 @@ def rotor_robstride01():
     rval -= RadialHoles(
         dia=24,
         count=3, 
-        hole=4.6,
+        hole=5.5,
         thick=200,
         angle=30
     )
@@ -104,7 +104,7 @@ def rotor_robstride01():
 def rotor_robstride04():
         
     stem_dia = 50
-    stem_h = 50
+    stem_h = 30
 
     rval = cylinder(d=stem_dia, h=stem_h)
 
@@ -113,7 +113,7 @@ def rotor_robstride04():
     rval -= RadialHoles(
         dia=32,
         count=12, 
-        hole=5.3,
+        hole=5.6,
         thick=200,
         angle=0
     )
@@ -121,7 +121,7 @@ def rotor_robstride04():
     rval -= RadialHoles(
         dia=32,
         count=3, 
-        hole=5.6,
+        hole=6,
         thick=200,
     )
 

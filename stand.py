@@ -6,9 +6,9 @@ from common import RadialHoles
 from collections import namedtuple
 
 ## Thickness of the face of the motor 
-facethick = 20 
-basethick = 25
-height = 150
+facethick = 15 
+basethick = 15
+height = 120
 width = 220
 base = 110
 
@@ -16,8 +16,7 @@ base = 110
 
 
 def RS01_cutout(thick=10):
-    return RadialHoles(73, 9, 3, thick, 0) + RadialHoles(0, 1, 44, thick, 0)
-
+    return RadialHoles(dia=73, count=9, hole=3.5, thick=thick, angle=0) + RadialHoles(0, 1, 44, thick=thick, angle=0)
 
 
 def RS04_cutout(thick=10):
@@ -46,7 +45,7 @@ def stand(cutout=RS01_cutout, head_dia=100):
 
 
 rval = stand(RS01_cutout).fwd(115)
-rval += stand(RS04_cutout, 135)
+# rval += stand(RS04_cutout, 135)
 
 rval = rval.rotate(90).right(10)
 # rval = RadialHoles()
