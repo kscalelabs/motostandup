@@ -44,11 +44,12 @@ def stand(cutout=RS01_cutout, head_dia=100):
     return rval 
 
 
-rval = stand(RS01_cutout).fwd(115)
-# rval += stand(RS04_cutout, 135)
+if __name__ == "__main__":
+    rval = stand(RS01_cutout).fwd(115)
+    # rval += stand(RS04_cutout, 135)
 
-rval = rval.rotate(90).right(10)
-# rval = RadialHoles()
+    rval = rval.rotate(90).right(10)
+    # rval = RadialHoles()
 
-print ("$fn=50;")
-print (rval.as_scad())
+    print ("$fn=50;")
+    print (rval.as_scad())
